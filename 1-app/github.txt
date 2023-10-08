@@ -1,0 +1,89 @@
+SETUP GITHUB ACCOUNT TO PUSH DATA
+. ================================
+
+1. SETUP GITHUB ACCOUNT & NEW REPOSITORY 
+
+-> Create Github account 
+https://github.com/
+
+-> Sign to your account 
+
+'EMAIL':
+rryevhenrr@gmail.com
+
+'PASSWORD':
+#Molly2020#
+
+'CREATE A NEW REPOSITORY'
+-> Click '+'
+-> Choose 'new repository'
+-> Enter Repository name 'temp-node-app'
+-> Click button 'Create repository'
+
+# NOTE: IN RESULT A NEW REPOSITORY WILL BE CREATED & COPY FOLLOWING THREE COMANDS TO USE IN PUSHING DATA TO GITHUB REPOSITORY 
+
+git remote add origin https://github.com/Ryevh/temp-node-app.git
+git branch -M main
+git push -u origin main
+
+2. CREATE A NEW FILE TO SETUP TO IGNORE SOME DATA FROM NOT PUSHING 
+
+// .gitignore
+// ..........
+/node_modules
+
+# NOTE: IN RESULT WE IGNORE 'node_modules' FOLDER FROM PUSHING TO REPOSITORY 
+
+3. TARGET PROJECT FOLDER TO OPEN UP INTEGRATED TERMINAL TO RUN COMMANDS 
+
+- RUN COMMAND TO INITIALIZE GIT 
+..................................
+git init
+
+# NOTE: IN RESULT WE INITIALIZE OUR GIT REPOSITORY AS EMPTY ONE 
+
+- RUN COMMAND TO ADD ALL THE PROJECT FILES FOR PUSHING IT TO GIT REPOSITORY 
+..................................
+git add .
+
+- OR ANOTHER COMMAND TO DO SAMETHING 
+git add -A
+
+- RUN COMMAND TO SETUP COMMIT TO PUSH 
+..................................
+git commit -m "first commit"
+
+- RUN COMMANDS TO PUSH ADDED & COMMITED DATA TO THE GIT REPOSITORY ON GITHUB 
+..................................
+git remote add origin https://github.com/Ryevh/temp-node-app.git
+git branch -M main
+git push -u origin main
+
+# NOTE: IN RESULT OUR PROJECT DATA WILL BE PUSHED TO THE GIT REPOSITORY & GITHUB WILL CREATE A SPECIAL URL VALUE OF THE APPLICATION REPO IN 'HTTPS' SECTION OF LOCAL CLONE AREA 
+
+4. GO TO YOUR GITHUB PAGE WITH YOUR GIT REPOSITORY TO REFRESH IT TO SEE RESULT 
+
+5. THEN IF IN CASE WE WANT TO GET DATA FROM THE GITHUB REPOSITORY 
+
+-> Go to 'Code'
+-> Copy 'HTTPS'
+https://github.com/Ryevh/temp-node-app.git
+
+-> Create a new folder on Desktop
+
+// proj 
+
+-> Target created folder '/proj' to open up integrated terminal to run command 
+
+- RUN COMMAND 
+..................................
+git clone https://github.com/Ryevh/temp-node-app.git
+
+- RUN COMMAND TO INSTALL ALL THE DEPENDENCIES FROM CLONED IMPORTED APP FILES 
+..................................
+npm install
+
+
+
+
+
